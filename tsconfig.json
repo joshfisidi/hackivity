@@ -6,8 +6,11 @@
       "esModuleInterop": true,
       "skipLibCheck": true,
       "forceConsistentCasingInFileNames": true,
-      "outDir": "./dist"
+      "outDir": "./dist",
+      "rootDir": "./src",
+      "moduleResolution": "node",
+      "resolveJsonModule": true
     },
-    "include": ["*.ts"],
-    "exclude": ["node_modules"]
-  }
+    "include": ["src/**/*"],
+    "exclude": ["node_modules", "dist"]
+}
